@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
+ output: 'standalone',
   compiler: {
     styledComponents: true,
   },
 }
 
-export default nextConfig;
+module.exports = nextConfig
