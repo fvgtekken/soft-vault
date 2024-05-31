@@ -1,7 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
-
 First, run the development server:
 
 ```bash
@@ -15,25 +12,28 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+```bash
+## TEST
+yarn test
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-// Console test error :
+Console test error :
 https://github.com/vercel/next.js/issues/65161
+
+
+## DEPLOY
+This app use the official docker image for deployment 
+For more details please see: https://nextjs.org/docs/app/building-your-application/deploying
+In this example github Actions use the registry of github to deploy the image in a VPS.
+
+WorkFlow:
+ 1 - build and publish the docker image in ghcr.io registry
+ 2 - connect to the server by ssh copy the compose file and download the image from the registry
+ 3 - execute docker compose up -d in the vps
+ 4 - connect the container with a frontal nginx wiht reverse proxy 
+
+## DEMO
+The app is deployed in :
+https://srv498956.hstgr.cloud/
