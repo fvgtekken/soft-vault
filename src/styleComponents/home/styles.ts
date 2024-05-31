@@ -4,9 +4,10 @@ import { titleFont, panelFont } from '../../app/config/fonts';
 
 /*Container Home*/ 
 export const StyledContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex; 
+  flex-direction: row; 
   gap: 1.5rem /* 24px */;
+  flex-wrap: wrap;
 `;
 
 /*Panel Design*/ 
