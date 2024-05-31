@@ -1,27 +1,50 @@
 'use client';
-import Image from "next/image";
-import styled from 'styled-components';
+import Panels, { PropsPanles } from "@/components/Panels";
+import IconTech from "../../public/iconTech1.svg";
+import Demo from "../../public/demo.svg";
+import { StyledContainer } from "@/styleComponents/home/styles";
 
 
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem /* 24px */;
-`;
-
+const dataPanels:PropsPanles[] = [{
+   urlPanelDesing: Demo.src,
+   srcIcon :IconTech,
+   widthTitle :"200px",
+   opacityText:"1",
+   titleText: `Understanding needs`,
+   mainText:`We identify who has the problem
+                or need and provide a detailed
+                description of what
+                the problem entails`,
+  }, {
+   urlPanelDesing: Demo.src,
+   srcIcon :IconTech,
+   widthTitle :"200px",
+   opacityText:"0.5",
+   titleText: `Identifying opportunities`,
+   mainText:`Lorem Ipsum is simply dummy text
+of the printin and typesetting
+industry. Lorem Ipsum has
+been the industry's standard...`,
+  },
+ {
+   urlPanelDesing: Demo.src,
+   srcIcon :IconTech,
+   widthTitle :"250px",
+   opacityText:"0.5",
+   titleText: `Developing customized solutions`,
+   mainText:`Lorem Ipsum is simply dummy text
+of the printin and typesetting
+industry. Lorem Ipsum has
+been the industry's standard...`,
+  }]
 
 export default function Home() {
-  return (
-    <Container>
-       <div>
-          Hello 1!
-      </div>
-       <div>
-          Hello 2!
-      </div>
-       <div>
-          Hello 2!
-      </div>
-    </Container>
+  
+  return ( 
+        <>
+        <StyledContainer>
+             {dataPanels.map((propsPanel:PropsPanles, index:number)=>(<Panels key={index} {...propsPanel} />))}
+          </StyledContainer> 
+        </>
   );
 }
