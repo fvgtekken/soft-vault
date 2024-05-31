@@ -21,7 +21,7 @@ export default function Panels({urlPanelDesing, srcIcon, widthTitle, widthText, 
   return (
         <StyledPanel  urlimg={urlPanelDesing || Demo.src }> 
           <StyledContainerIcon>
-            <Image src={srcIcon || IconTech} alt={"Icon Tech"}/>
+            <Image src={srcIcon || IconTech} alt={"Icon Tech"} width={50} height={50} />
           </StyledContainerIcon>
             <StyledTitle width={widthTitle}>{titleText}</StyledTitle>
               <StyledPanelText opacity={opacityText}  width={widthText}> 

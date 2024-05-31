@@ -34,7 +34,7 @@ interface StyledTitleProps {
   width?: string; // width es opcional y es una cadena de texto
 }
 
-export const StyledTitle = styled.div<StyledTitleProps>`
+export const StyledTitle = styled.h2<StyledTitleProps>`
   position:relative;
   left:-15px;
   top:-18px;
@@ -43,8 +43,6 @@ export const StyledTitle = styled.div<StyledTitleProps>`
   text-align: center;
   font-family: ${titleFont.style.fontFamily};
 `;
-
-
 
 /*Panel Text*/ 
 interface StyledPanelText {

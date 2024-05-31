@@ -15,15 +15,6 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
-# DataDB
-ARG DATABASE_URL
-ENV DATABASE_URL=$DATABASE_URL
-
-# Secret 
-ARG AUTH_SECRET
-ENV AUTH_SECRET=$AUTH_SECRET
-
-
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
@@ -69,9 +60,8 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 5000
-
-ENV PORT 5000
+EXPOSE 5001
+ENV PORT 5001
 
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output

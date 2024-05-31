@@ -1,22 +1,15 @@
 services:
   frontend:
-    container_name: fcvg-public-next
-    image: ghcr.io/fvgtekken/fcvg-public-next:latest
-    environment:
-      DATABASE_URL: ${DATABASE_URL}
-      AUTH_SECRET: ${AUTH_SECRET}
+    container_name: softvalue-public-next
+    image: ghcr.io/fvgtekken/softvault-public-next:latest
     ports:
-      - 5000:5000
+      - 5001:5001
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
     networks:
       - my-network-next-front   
-      - my-network-postgres
       
 networks:
   my-network-next-front:
     external: true
     name: default-network-front
-  my-network-postgres:
-    external: true
-    name: default-network-postgres  

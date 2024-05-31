@@ -6,7 +6,7 @@ import React from 'react'
 // Un componente simple para probar
 const HelloWorld = () => <div>Hello, world!</div>
 
-test('renders hello world', () => {
+test('renders hello world testing jest work', () => {
   render(<HelloWorld />)
   const helloWorldElement = screen.getByText(/hello, world!/i)
   expect(helloWorldElement).toBeInTheDocument()
