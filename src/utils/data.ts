@@ -1,9 +1,9 @@
 import IconTech from "../../public/iconTech1.svg";
 import Demo from "../../public/demo.svg";
-import { PropsPanles } from "@/components/Panels";
+import { PropsPanel } from "@/components/Panel";
 
 
-export const dataPanels:PropsPanles[] = [{
+export const dataPanels:PropsPanel[] = [{
    urlPanelDesing: Demo.src,
    srcIcon :IconTech,
    widthTitle :"200px",

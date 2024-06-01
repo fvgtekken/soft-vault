@@ -6,7 +6,7 @@ import IconTech from "../../public/iconTech1.svg";
 import { StyledPanel,StyledContainerIcon, StyledTitle, StyledPanelText } from "@/styleComponents/home/styles";
 
 
-export interface PropsPanles {
+export interface PropsPanel {
     urlPanelDesing?: string;
     srcIcon? :string;
     widthTitle? :string;
@@ -16,7 +16,7 @@ export interface PropsPanles {
     mainText:string;
 }
 
-export default function Panels({urlPanelDesing, srcIcon, widthTitle, widthText, opacityText , titleText , mainText}:PropsPanles) {
+export default function Panels({urlPanelDesing, srcIcon, widthTitle, widthText, opacityText , titleText , mainText}:PropsPanel) {
   
   return (
         <StyledPanel  urlimg={urlPanelDesing || Demo.src }> 

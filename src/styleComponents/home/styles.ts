@@ -41,6 +41,7 @@ export const StyledTitle = styled.h2<StyledTitleProps>`
   width: ${({ width }) => width || '150px'};
   font-size: 1.2rem;
   text-align: center;
+  color: white;
   font-family: ${titleFont.style.fontFamily};
 `;
 
@@ -58,6 +59,7 @@ export const StyledPanelText = styled.div<StyledPanelText>`
     height:180px;
     text-align: center;
     font-family: ${panelFont.style.fontFamily};
+    color: white;
     font-size:16px;
     opacity:${({ opacity }) => opacity || '0.3'};
 `;

@@ -2010,7 +2010,7 @@
     polished "^4.2.2"
     uuid "^9.0.0"
 
-"@storybook/addon-backgrounds@8.1.5":
+"@storybook/addon-backgrounds@8.1.5", "@storybook/addon-backgrounds@^8.1.5":
   version "8.1.5"
   resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-8.1.5.tgz#dd77d8fac2df534bab2d8550fd3adf0892807e88"
   integrity sha512-osAM4U8DCcKe/JGBBHoFYQi0oorNzFPwcETTy4SAc8LVqsv73SN7CyNnqCrN9Kjom9klJqB/tngvjdJ1XLu4WQ==
@@ -6581,6 +6581,11 @@ ieee754@^1.1.13, ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
+
+ignore-loader@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ignore-loader/-/ignore-loader-0.1.2.tgz#d81f240376d0ba4f0d778972c3ad25874117a463"
+  integrity sha512-yOJQEKrNwoYqrWLS4DcnzM7SEQhRKis5mB+LdKKh4cPmGYlLPR0ozRzHV5jmEk2IxptqJNQA5Cc0gw8Fj12bXA==
 
 ignore@^5.2.0, ignore@^5.2.4:
   version "5.3.1"
