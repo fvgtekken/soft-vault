@@ -37,3 +37,6 @@ WorkFlow:
 ## DEMO
 The app is deployed in :
 https://srv498956.hstgr.cloud/
+
+## DOC
+yarn storybook
