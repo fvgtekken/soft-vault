@@ -60,7 +60,7 @@ export const StyledPanelText = styled.div<StyledPanelText>`
     text-align: center;
     font-family: ${panelFont.style.fontFamily};
     color: white;
-    font-size:16px;
+    font-size:1rem;
     opacity:${({ opacity }) => opacity || '0.3'};
 `;
 
