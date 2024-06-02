@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import React from 'react'
 
-// Un componente simple para probar
 const HelloWorld = () => <div>Hello, world!</div>
 
 test('renders hello world testing jest work', () => {
