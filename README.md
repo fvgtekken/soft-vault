@@ -24,9 +24,7 @@ https://github.com/vercel/next.js/issues/65161
 
 
 ## DEPLOY
-This app use the official docker image for deployment 
-For more details please see: https://nextjs.org/docs/app/building-your-application/deploying
-In this example github Actions use the registry of github to deploy the image in a VPS.
+This app uses the official Docker image for deployment. For more details, please see: https://nextjs.org/docs/app/building-your-application/deploying. In this example, GitHub Actions uses the GitHub registry to deploy the image on a VPS.
 
 WorkFlow:
  1 - build and publish the docker image in ghcr.io registry
