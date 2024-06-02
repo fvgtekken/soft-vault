@@ -6,7 +6,7 @@ import { dataPanels } from "@/utils/data";
 export default function Home() {
   return ( 
         <>
-        <StyledContainer>
+        <StyledContainer >
              {dataPanels.map((propsPanel:PropsPanel, index:number)=>(<Panel key={index} {...propsPanel} />))}
         </StyledContainer> 
         </>

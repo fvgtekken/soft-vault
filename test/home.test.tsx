@@ -46,4 +46,13 @@ describe('Home component', () => {
       expect(screen.getByText(text)).toBeInTheDocument();
     });
   });
+
+  test('renders the StyledContainer in Home', () => {
+      const { container } = render(<Home />);
+      const styledContainer = container.querySelector('div');
+      expect(styledContainer).toBeInTheDocument();
+      expect(styledContainer).toHaveStyleRule('display', 'flex');
+  });
+
+
 });
