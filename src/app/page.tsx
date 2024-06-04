@@ -1,6 +1,6 @@
 'use client';
 import Panel, { PropsPanel } from "@/components/Panel";
-import { StyledContainer } from "@/styleComponents/home/styles";
+import { StyledContainer } from "@/styleComponents/app/page";
 import { dataPanels } from "@/utils/data";
 
 export default function Home() {

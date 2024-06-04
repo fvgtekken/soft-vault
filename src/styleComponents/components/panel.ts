@@ -2,24 +2,16 @@ import styled from 'styled-components';
 import Demo from "../../../public/demo.svg";
 import { titleFont, panelFont } from '../../app/config/fonts';
 
-/*Container Home*/ 
-export const StyledContainer = styled.div`
-  display: flex; 
-  flex-direction: row; 
-  gap: 1.5rem /* 24px */;
-  flex-wrap: wrap;
-`;
-
 /*Panel Design*/ 
 interface StyledPanelProps {
-  urlimg?: string; // urlImg es opcional y es una cadena de texto
+  $urlimg?: string; // urlImg es opcional y es una cadena de texto
 }
 
 export const StyledPanel = styled.div<StyledPanelProps>`
   margin-top:5rem;
   width: 376px;
   height: 223px;
-  background-image:  url(${props => props.urlimg || Demo.src});
+  background-image:  url(${props => props.$urlimg || Demo.src});
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center;
