@@ -1,15 +1,19 @@
+import Head from 'next/head'
 import './globals.css'
 import StyledComponentsRegistry from './lib/registry'
- 
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-   <html>
-      <title>Soft Vault Example</title>
-      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'"  key="seciruty" />
+    
+   <html lang="en">
+      <title>Soft Vault Demo</title>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <body>
         <StyledComponentsRegistry >{children}</StyledComponentsRegistry>
       </body>
