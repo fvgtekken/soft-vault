@@ -1,9 +1,10 @@
 const path = require('path');
 /** @type {import('next').NextConfig} */
 
+
 const cspHeader = `
     default-src 'self';
-    script-src 'self';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline';
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data:;
     font-src 'self';
@@ -12,11 +13,10 @@ const cspHeader = `
     form-action 'self';
     frame-ancestors 'none';
     upgrade-insecure-requests;
-`;
-
+`
 
 const nextConfig = {
-   // Añadir CSP ( content security policy ot avoid xss )
+   // Añadir CSP (content security policy ot avoid xss )
    async headers() {
     return [
       {
@@ -41,6 +41,7 @@ const nextConfig = {
       loader: 'ignore-loader',
       include: [path.resolve(__dirname, 'src/stories')],
     });
+
     return config;
   },
 };
