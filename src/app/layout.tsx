@@ -1,6 +1,5 @@
 import './globals.css'
 import StyledComponentsRegistry from './lib/registry'
-import Head from 'next/head'
  
 export default function RootLayout({
   children,
@@ -9,12 +8,8 @@ export default function RootLayout({
 }) {
   return (
    <html>
-    <Head>
-        <title>Soft Vault Example</title>
-    </Head>
-      <Head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'"  key="seciruty" />
-      </Head>
+      <title>Soft Vault Example</title>
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'"  key="seciruty" />
       <body>
         <StyledComponentsRegistry >{children}</StyledComponentsRegistry>
       </body>
