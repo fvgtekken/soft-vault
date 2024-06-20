@@ -14,6 +14,7 @@ export default function RootLayout({
       <Head>
         <meta http-equiv="Content-Security-Policy" content="script-src 'none'" key='security' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"  key='viewport' />
+        <meta name="description" content="Soft-Vault Test." />
       </Head>
       <body>
         <StyledComponentsRegistry >{children}</StyledComponentsRegistry>
