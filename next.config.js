@@ -3,7 +3,7 @@ const path = require('path');
 
 const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline';
+    script-src 'self';
     style-src 'self' 'unsafe-inline';
     img-src 'self' blob: data:;
     font-src 'self';
@@ -12,7 +12,8 @@ const cspHeader = `
     form-action 'self';
     frame-ancestors 'none';
     upgrade-insecure-requests;
-`
+`;
+
 
 const nextConfig = {
    // Añadir CSP ( content security policy ot avoid xss )
