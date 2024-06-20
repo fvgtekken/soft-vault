@@ -11,9 +11,6 @@ export default function RootLayout({
     
    <html lang="en">
       <title>Soft Vault Demo</title>
-
-
-
       <Head>
         <meta http-equiv="Content-Security-Policy" content="script-src 'none'" key='security' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"  key='viewport' />
