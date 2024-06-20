@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-   <>
+   <html>
     <Head>
         <title>Soft Vault Example</title>
     </Head>
@@ -18,6 +18,6 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry >{children}</StyledComponentsRegistry>
       </body>
-    </>
+    </html>
   )
 }
